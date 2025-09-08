@@ -3,4 +3,5 @@ export  type HeaderProps ={
   toggleMobileNav: () => void;
   isDesKtopNavOpen: boolean;
   toggleDesktopNav: () => void;
+  windowWidth: number
 }

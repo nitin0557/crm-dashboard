@@ -23,8 +23,9 @@ const Header: React.FC<HeaderProps> = ({
   toggleMobileNav,
   isDesKtopNavOpen,
   toggleDesktopNav,
+  windowWidth
 }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
   const [openSection, setOpenSection] = useState<string | null>(null);
 
   // ✅ useCallback to avoid re-creating functions
@@ -61,11 +62,7 @@ const Header: React.FC<HeaderProps> = ({
     []
   );
 
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+
 
   return (
     <HeaderWrapper>
