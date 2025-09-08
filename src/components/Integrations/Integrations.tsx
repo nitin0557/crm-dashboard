@@ -1,15 +1,5 @@
-// SupportedLeadCRM.tsx
-import styled from "@emotion/styled";
 import React from "react";
-import { ReactComponent as LinkedinIcon } from "../assets/linked.svg";
-import { ReactComponent as UpperCurveIcon } from "../assets/uppercurve.svg";
-import { ReactComponent as StraightIcon } from "../assets/straightline.svg";
-import { ReactComponent as LowerCurveIcon } from "../assets/lowercurve.svg";
-import { ReactComponent as LogoIcon } from "../assets/logonew.svg";
-import { ReactComponent as CircleIcon } from "../assets/circle.svg";
-import { ReactComponent as PIcon } from "../assets/p.svg";
-import { ReactComponent as SalesForceIcon } from "../assets/salesforce.svg";
-import { ReactComponent as ZohoIcon } from "../assets/zoho.svg";
+
 import {
   CTAButton,
   DiagramWrapper,

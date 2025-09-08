@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import { ReactComponent as LogoIcon } from "../../assets/leadcrmlogo.svg";
 import { ReactComponent as FrameIcon } from "../../assets/frame.svg";
 import { ReactComponent as ArrowDownIcon } from "../../assets/arrowdown.svg";
@@ -23,25 +22,19 @@ const Header: React.FC<HeaderProps> = ({
   toggleMobileNav,
   isDesKtopNavOpen,
   toggleDesktopNav,
-  windowWidth
+  windowWidth,
 }) => {
-
   const [openSection, setOpenSection] = useState<string | null>(null);
 
-  // ✅ useCallback to avoid re-creating functions
-  const toggleSection = useCallback(
-    (section: string) => {
-      setOpenSection((prev) => (prev === section ? null : section));
-    },
-    []
-  );
+  const toggleSection = useCallback((section: string) => {
+    setOpenSection((prev) => (prev === section ? null : section));
+  }, []);
 
   const handleMobileLinkClick = useCallback(() => {
     toggleMobileNav();
     setOpenSection(null);
   }, [toggleMobileNav]);
 
-  // ✅ useMemo for dropdown items (static list)
   const resourcesLinks = useMemo(
     () => [
       { to: "/blogs", label: "Blogs" },
@@ -62,8 +55,6 @@ const Header: React.FC<HeaderProps> = ({
     []
   );
 
-
-
   return (
     <HeaderWrapper>
       <div className="header-inner">
@@ -71,7 +62,6 @@ const Header: React.FC<HeaderProps> = ({
           <LogoIcon width={208} height={64} />
         </div>
 
-        {/* ✅ DESKTOP NAV */}
         <div className="nav">
           <Nav isMobileNavOpen={isMobileNavOpen} isDeskOpen={isDesKtopNavOpen}>
             <div className="nav-item">
@@ -110,7 +100,6 @@ const Header: React.FC<HeaderProps> = ({
           </Nav>
         </div>
 
-        {/* ✅ LOGIN + CTA */}
         <AccountLoginWrapper>
           {windowWidth >= 768 && <Button>Get Free Account</Button>}
           <div className="login">
@@ -132,17 +121,57 @@ const Header: React.FC<HeaderProps> = ({
         </div>
         {openSection === "product" && (
           <div className="mobile-dropdown">
-            <Link to="/lead-finder" className="mobile-dropdown-item" onClick={handleMobileLinkClick}>Lead Finder</Link>
-            <Link to="/teammate" className="mobile-dropdown-item" onClick={handleMobileLinkClick}>Teammate</Link>
-            <Link to="/deal-management" className="mobile-dropdown-item" onClick={handleMobileLinkClick}>Deal Management</Link>
-            <Link to="/crm-sync" className="mobile-dropdown-item" onClick={handleMobileLinkClick}>CRM Data Sync</Link>
-            <Link to="/ai-commenting" className="mobile-dropdown-item" onClick={handleMobileLinkClick}>AI-Assisted Commenting</Link>
-            <Link to="/templates" className="mobile-dropdown-item" onClick={handleMobileLinkClick}>Templates & Shortcuts</Link>
+            <Link
+              to="/lead-finder"
+              className="mobile-dropdown-item"
+              onClick={handleMobileLinkClick}
+            >
+              Lead Finder
+            </Link>
+            <Link
+              to="/teammate"
+              className="mobile-dropdown-item"
+              onClick={handleMobileLinkClick}
+            >
+              Teammate
+            </Link>
+            <Link
+              to="/deal-management"
+              className="mobile-dropdown-item"
+              onClick={handleMobileLinkClick}
+            >
+              Deal Management
+            </Link>
+            <Link
+              to="/crm-sync"
+              className="mobile-dropdown-item"
+              onClick={handleMobileLinkClick}
+            >
+              CRM Data Sync
+            </Link>
+            <Link
+              to="/ai-commenting"
+              className="mobile-dropdown-item"
+              onClick={handleMobileLinkClick}
+            >
+              AI-Assisted Commenting
+            </Link>
+            <Link
+              to="/templates"
+              className="mobile-dropdown-item"
+              onClick={handleMobileLinkClick}
+            >
+              Templates & Shortcuts
+            </Link>
           </div>
         )}
 
         {/* Pricing */}
-        <Link to="/pricing" className="mobile-link" onClick={handleMobileLinkClick}>
+        <Link
+          to="/pricing"
+          className="mobile-link"
+          onClick={handleMobileLinkClick}
+        >
           Pricing
         </Link>
 
@@ -165,7 +194,7 @@ const Header: React.FC<HeaderProps> = ({
           </div>
         )}
 
-        {/* Company Dropdown */}
+    
         <div className="mobile-link" onClick={() => toggleSection("company")}>
           Company <ArrowDownIcon width={14} height={10} />
         </div>

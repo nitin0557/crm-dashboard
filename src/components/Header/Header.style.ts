@@ -40,7 +40,10 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-export const Nav = styled.nav<{ isDeskOpen: boolean; isMobileNavOpen: boolean }>`
+export const Nav = styled.nav<{
+  isDeskOpen: boolean;
+  isMobileNavOpen: boolean;
+}>`
   gap: 1.5rem;
   display: ${({ isDeskOpen }) => (isDeskOpen ? "none" : "flex")};
 
@@ -61,8 +64,7 @@ export const Nav = styled.nav<{ isDeskOpen: boolean; isMobileNavOpen: boolean }>
   }
 
   @media (max-width: 768px) {
-    display: ${({ isMobileNavOpen }) =>
-      isMobileNavOpen ? "flex" : "none"};
+    display: ${({ isMobileNavOpen }) => (isMobileNavOpen ? "flex" : "none")};
     flex-direction: column;
     position: fixed;
     inset: 0;

@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Section = styled.section`
   padding: 80px 20px;
-  background: #EAEFFA;
+  background: #eaeffa;
   position: relative;
   text-align: center;
 
@@ -56,7 +56,7 @@ export const Title = styled.h2`
 `;
 
 export const Banner = styled.div`
-  background: linear-gradient(204.61deg, #0995C8 4.1%, #065D7D 77.57%);
+  background: linear-gradient(204.61deg, #0995c8 4.1%, #065d7d 77.57%);
   color: white;
   padding: 50px 20px;
   border-radius: 12px;

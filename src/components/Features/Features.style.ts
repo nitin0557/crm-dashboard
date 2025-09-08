@@ -7,7 +7,7 @@ export const FeaturesRow = styled.div`
   margin-bottom: 4rem;
   padding-bottom: 1.5rem;
   flex-wrap: wrap;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid #f1f1f1;
 
   @media (max-width: 900px) {
     gap: 1.5rem;
@@ -96,10 +96,8 @@ export const ComparisonGrid = styled.div`
   }
 `;
 
-
 export const Card = styled.div<{ variant?: "bad" | "good" }>`
-  background: ${({ variant }) =>
-    variant === "bad" ? "#fff5f5" : "#f9fbff"};
+  background: ${({ variant }) => (variant === "bad" ? "#fff5f5" : "#f9fbff")};
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -119,8 +117,7 @@ export const CardHeader = styled.h3<{ variant?: "bad" | "good" }>`
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: ${({ variant }) =>
-    variant === "bad" ? "#d62828" : "#28a745"};
+  color: ${({ variant }) => (variant === "bad" ? "#d62828" : "#28a745")};
 
   @media (max-width: 768px) {
     font-size: 1.1rem;
@@ -144,10 +141,8 @@ export const ListItem = styled.li<{ variant?: "bad" | "good" }>`
   span {
     font-weight: 600;
     font-size: 0.85rem;
-    background: ${({ variant }) =>
-      variant === "bad" ? "#ffe2e2" : "#e2f7e8"};
-    color: ${({ variant }) =>
-      variant === "bad" ? "#d62828" : "#28a745"};
+    background: ${({ variant }) => (variant === "bad" ? "#ffe2e2" : "#e2f7e8")};
+    color: ${({ variant }) => (variant === "bad" ? "#d62828" : "#28a745")};
     border-radius: 6px;
     padding: 0.15rem 0.5rem;
     margin-left: auto;
@@ -176,7 +171,7 @@ export const Divider = styled.div`
   font-size: 1rem;
   text-align: center;
   margin: 1rem 0;
-  
+
   @media (min-width: 901px) {
     position: relative;
     display: flex;
@@ -241,11 +236,17 @@ export const Button = styled.a`
   @media (max-width: 768px) {
     padding: 0.8rem 1.5rem;
     font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (max-width: 480px) {
     padding: 0.7rem 1.2rem;
     font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    width: 60%;
   }
 `;
 

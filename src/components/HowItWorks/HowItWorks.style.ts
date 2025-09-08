@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Section = styled.section`
   padding: 4rem 2rem;
-  background: #EAEFFA;
+  background: #eaeffa;
   text-align: center;
   position: relative;
 

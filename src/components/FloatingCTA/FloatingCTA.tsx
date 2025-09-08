@@ -1,12 +1,14 @@
-// components/FloatingCTA.tsx
-import styled from "@emotion/styled";
 import React, { useEffect, useState } from "react";
 import { ReactComponent as CreditCardIcon } from "../../assets/creditcard.svg";
 import { ReactComponent as ClockIcon } from "../../assets/clock.svg";
-import { Avatars, BottomRow, CTAButton, LeftContent, TopRow, Wrapper } from "./Floating.style";
-
-
-
+import {
+  Avatars,
+  BottomRow,
+  CTAButton,
+  LeftContent,
+  TopRow,
+  Wrapper,
+} from "./Floating.style";
 
 const FloatingCTA: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -44,11 +46,11 @@ const FloatingCTA: React.FC = () => {
 
       <BottomRow>
         <div>
-          <CreditCardIcon/>
+          <CreditCardIcon />
           <span>No Credit Card</span> Required
         </div>
         <div>
-          <ClockIcon/>
+          <ClockIcon />
           <span>14 Days Free</span> Trial
         </div>
       </BottomRow>

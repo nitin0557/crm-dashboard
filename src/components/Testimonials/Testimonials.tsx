@@ -1,14 +1,22 @@
-import styled from "@emotion/styled";
 import React, { useState } from "react";
 import { ReactComponent as ArrowLeftIcon } from "../../assets/arrow-left.svg";
 import { ReactComponent as ArrowRightIcon } from "../../assets/arrow-right.svg";
 import { ReactComponent as StarIcon } from "../../assets/star.svg";
 import { ReactComponent as TriangleIcon } from "../../assets/trianlge.svg";
 import { ReactComponent as StarBlackIcon } from "../../assets/starblack.svg";
-import { ArrowButton, Author, Card, CardWrapper, Carousel, Divider, Quote, Section, Stars, Title } from "./Testimonials.style";
+import {
+  ArrowButton,
+  Author,
+  Card,
+  CardWrapper,
+  Carousel,
+  Divider,
+  Quote,
+  Section,
+  Stars,
+  Title,
+} from "./Testimonials.style";
 import { testimonials } from "./constants";
-
-
 
 const Testimonials: React.FC = () => {
   const [index, setIndex] = useState(0);

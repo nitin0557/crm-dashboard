@@ -10,7 +10,7 @@ export const GlobalStyle = () => (
         box-sizing: border-box;
       }
       body {
-        font-family: 'Exo2', sans-serif;
+        font-family: "Exo2", sans-serif;
         background: #fff;
         color: #222222;
         line-height: 1;

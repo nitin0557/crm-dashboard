@@ -9,7 +9,6 @@ const CTA: React.FC = () => {
       <Title>Join Thousands of Professionals Using LeadCRM</Title>
 
       <BannerImageWrapper>
-        {" "}
         <BannerImage />
       </BannerImageWrapper>
 

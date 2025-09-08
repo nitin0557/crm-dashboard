@@ -49,7 +49,6 @@ const Features: React.FC = () => {
           </div>
 
           <div>
-            {" "}
             <Save />
           </div>
         </div>

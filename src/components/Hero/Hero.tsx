@@ -1,5 +1,3 @@
-// src/components/LinkedInCRM.tsx
-import styled from "@emotion/styled";
 import React from "react";
 import { ReactComponent as RocketIcon } from "../../assets/rocket.svg";
 import { ReactComponent as LineIcon } from "../../assets/line.svg";
@@ -10,11 +8,16 @@ import { ReactComponent as GoogleHalfIcon } from "../../assets/chromehalf.svg";
 import { ReactComponent as TriangleIcon } from "../../assets/trianlge.svg";
 import { ReactComponent as StarIcon } from "../../assets/star.svg";
 import { ReactComponent as GoogleIcon } from "../../assets/chrome.svg";
-import { Actions, ChromeStarWrapper, Container, CRMBox, SubText, Title } from "./Hero.style";
+import {
+  Actions,
+  ChromeStarWrapper,
+  Container,
+  CRMBox,
+  SubText,
+  Title,
+} from "./Hero.style";
 import { Button } from "../Features/Features.style";
 
-
-// Hero Component
 const Hero: React.FC = () => {
   return (
     <Container>

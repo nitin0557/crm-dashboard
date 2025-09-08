@@ -3,8 +3,8 @@ import { GlobalStyle } from "../styles/globalStyles";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import FloatingCTA from "../components/FloatingCTA/FloatingCTA";
+import { Spinner, SpinnerWrapper } from "./Home.style";
 
-// ✅ Lazy load big sections
 const Hero = lazy(() => import("../components/Hero/Hero"));
 const Features = lazy(() => import("../components/Features/Features"));
 const HowItWorks = lazy(() => import("../components/HowItWorks/HowItWorks"));
@@ -47,10 +47,11 @@ const Home = () => {
         windowWidth={windowWidth}
       />
 
-      {/* ✅ Wrap lazy components in Suspense */}
       <Suspense
         fallback={
-          <div style={{ textAlign: "center", margin: "50px" }}>Loading...</div>
+          <SpinnerWrapper>
+            <Spinner />
+          </SpinnerWrapper>
         }
       >
         <Hero />

@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 
-// 🌟 Container
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
@@ -41,7 +40,6 @@ export const Container = styled.section`
     }
   }
 
-  /* 📱 Mobile */
   @media (max-width: 768px) {
     padding: 2rem 1rem;
     margin-top: 90px;
@@ -193,6 +191,8 @@ export const Actions = styled.div`
     flex-direction: column;
     gap: 0.8rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
-

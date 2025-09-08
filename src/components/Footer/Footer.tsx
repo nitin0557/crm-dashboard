@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import React from "react";
 import { ReactComponent as LogoIcon } from "../../assets/leadcrmlogo.svg";
 import { ReactComponent as FacebookIcon } from "../../assets/facebook.svg";
@@ -9,14 +8,30 @@ import { ReactComponent as MailIcon } from "../../assets/mail.svg";
 import { ReactComponent as PhoneIcon } from "../../assets/phone.svg";
 import { ReactComponent as QuestionIcon } from "../../assets/question.svg";
 import { ReactComponent as ChromeIcon } from "../../assets/chrome.svg";
-import { BrandSection, ChromeBtn, Column, ComingSoonRow, ContactRow, CopyRight, Description, Disclaimer, Divider, FooterContainer, FooterWrapper, Heading, LinkItem, LinksSection, Logo, SocialIcons, Tag } from "./Footer.style";
-
+import {
+  BrandSection,
+  ChromeBtn,
+  Column,
+  ComingSoonRow,
+  ContactRow,
+  CopyRight,
+  Description,
+  Disclaimer,
+  Divider,
+  FooterContainer,
+  FooterWrapper,
+  Heading,
+  LinkItem,
+  LinksSection,
+  Logo,
+  SocialIcons,
+  Tag,
+} from "./Footer.style";
 
 const Footer: React.FC = () => {
   return (
     <FooterWrapper>
       <FooterContainer>
-        {/* Left Section */}
         <BrandSection>
           <Logo>
             <LogoIcon />
@@ -41,7 +56,6 @@ const Footer: React.FC = () => {
           </SocialIcons>
         </BrandSection>
 
-        {/* Links Section */}
         <LinksSection>
           <Column>
             <Heading>Integrations</Heading>

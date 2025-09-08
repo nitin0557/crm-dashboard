@@ -20,7 +20,6 @@ import {
 const MegaDropdown: React.FC = () => {
   return (
     <DropdownWrapper>
-      {/* LEFT */}
       <Section>
         <Title>LinkedIn Extension</Title>
         <Text>
@@ -33,7 +32,6 @@ const MegaDropdown: React.FC = () => {
         </FeatureItem>
       </Section>
 
-      {/* MIDDLE */}
       <Section>
         <Title>Features</Title>
         <FeatureItem>
