@@ -37,6 +37,7 @@ const Features: React.FC = () => {
 
       <Title>Every LinkedIn Prospector faces these daily challenges</Title>
       <ComparisonGrid>
+        <img src="/Situation1.png" alt="image1" />
         <Divider>VS</Divider>
 
         <img src="/Situation2.png" alt="image1" />

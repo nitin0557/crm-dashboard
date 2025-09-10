@@ -172,6 +172,8 @@ export const Divider = styled.div`
   text-align: center;
   margin: 1rem 0;
 
+  
+
   @media (min-width: 901px) {
     position: relative;
     display: flex;
@@ -184,15 +186,17 @@ export const Divider = styled.div`
       position: absolute;
       height: 1px;
       background: rgba(188, 188, 188, 1);
-      width: 120px;
+      width: 240px;
     }
 
     &::before {
-      left: -130px;
+      top: -122px;
+      transform: rotate(90deg);
     }
 
     &::after {
-      right: -130px;
+        bottom: -122px;
+        transform: rotate(90deg);
     }
   }
 `;
